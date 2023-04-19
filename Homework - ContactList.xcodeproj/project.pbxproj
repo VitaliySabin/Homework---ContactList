@@ -15,6 +15,7 @@
 		68703B4B29F023B000D38667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68703B4929F023B000D38667 /* LaunchScreen.storyboard */; };
 		68703B5829F0265C00D38667 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68703B5729F0265C00D38667 /* DataStore.swift */; };
 		68703B5A29F029D600D38667 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68703B5929F029D600D38667 /* Person.swift */; };
+		68703B5C29F036F100D38667 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68703B5B29F036F100D38667 /* ContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		68703B4C29F023B000D38667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68703B5729F0265C00D38667 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		68703B5929F029D600D38667 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		68703B5B29F036F100D38667 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				68703B4229F023AD00D38667 /* ViewController.swift */,
+				68703B5B29F036F100D38667 /* ContactsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				68703B5A29F029D600D38667 /* Person.swift in Sources */,
 				68703B4329F023AD00D38667 /* ViewController.swift in Sources */,
+				68703B5C29F036F100D38667 /* ContactsTableViewController.swift in Sources */,
 				68703B5829F0265C00D38667 /* DataStore.swift in Sources */,
 				68703B3F29F023AD00D38667 /* AppDelegate.swift in Sources */,
 				68703B4129F023AD00D38667 /* SceneDelegate.swift in Sources */,
