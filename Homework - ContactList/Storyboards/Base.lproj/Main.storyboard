@@ -12,13 +12,13 @@
         <!--Persons List-->
         <scene sceneID="2Jg-QC-CPQ">
             <objects>
-                <tableViewController id="cnq-gw-q01" sceneMemberID="viewController">
+                <tableViewController id="cnq-gw-q01" customClass="ContactsTableViewController" customModule="Homework___ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="D0N-yp-cBg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personDetails" textLabel="8WI-z1-nKQ" style="IBUITableViewCellStyleDefault" id="MDe-tP-eeF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contact" textLabel="8WI-z1-nKQ" style="IBUITableViewCellStyleDefault" id="MDe-tP-eeF">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MDe-tP-eeF" id="3en-WS-Sfo">
@@ -52,16 +52,16 @@
             </objects>
             <point key="canvasLocation" x="-279" y="-6"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="Y0j-x2-rEf">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="mKs-Td-amG" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="mKs-Td-amG" customClass="DetailsViewController" customModule="Homework___ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrT-gv-eUl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="BTG-qp-6Ot">
-                                <rect key="frame" x="16" y="128.5" width="288" height="87"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BTG-qp-6Ot">
+                                <rect key="frame" x="16" y="128.5" width="288" height="57"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3E-gt-CLG">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
@@ -70,7 +70,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPm-QE-bbb">
-                                        <rect key="frame" x="0.0" y="66.5" width="288" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -87,6 +87,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ycb-sG-nNF"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="LPm-QE-bbb" id="BDz-DD-KpH"/>
+                        <outlet property="phoneNumberLabel" destination="d3E-gt-CLG" id="UlC-TV-cdZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ml1-Yh-5AA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +101,7 @@
             <objects>
                 <navigationController id="Z7X-ah-vsL" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fC2-SO-Lj5">
-                        <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

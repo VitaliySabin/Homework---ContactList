@@ -5,7 +5,6 @@
 //  Created by Виталий Сабин on 19.04.2023.
 //
 
-import Foundation
 
 struct Person: Hashable {
     let name: String
@@ -18,18 +17,18 @@ struct Person: Hashable {
     }
     
     static func getPerson() -> [Person] {
-        var persons: Set<Person> = []
+        var persons: [Person] = []
         
-        for _ in 1...names.count {
+        for _ in 1...DataStore().names.count {
             let person = Person(
-                name: names.randomElement() ?? "Ivan",
-                surname: surnames.randomElement() ?? "Ivanov",
-                phoneNumber: phoneNumbers.randomElement() ?? "00000",
-                email: emails.randomElement() ?? "xxxxx@mail.com"
-            )
-            persons.insert(person)
+                name: DataStore().names.randomElement() ?? "",
+                surname: DataStore().surnames.randomElement() ?? "",
+                phoneNumber: DataStore().phoneNumbers.randomElement() ?? "",
+                email: DataStore().emails.randomElement() ?? "")
+            
+            
+            persons.append(person)
         }
-        return Array(persons)
+        return persons
     }
-    
 }
